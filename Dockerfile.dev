@@ -17,4 +17,3 @@ RUN mkdir ~/server_dst
 
 RUN ./steamcmd.sh login anonymous force_install_dir ~/server_dst app_update 343050 validate
 
-RUN 
