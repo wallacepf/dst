@@ -13,13 +13,13 @@ RUN mkdir -p /src/server_dst && mkdir /src/config
 
 COPY steamcmd_linux.tar.gz /src
 
-RUN tar -xvzf steamcmd_linux.tar.gz
-
 COPY server_dst.txt /src/config
 
 RUN adduser dst && su - dst
 
 WORKDIR /src
+
+RUN tar -xvzf steamcmd_linux.tar.gz
 
 RUN ./steamcmd/steamcmd.sh +runscript config/server_dst.txt
 
