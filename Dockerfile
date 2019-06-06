@@ -8,4 +8,4 @@ COPY . /src/config
 
 VOLUME [ "/src" ]
 
-RUN ./steamcmd.sh +runscript /src/config
+RUN ./steamcmd.sh +runscript /src/config/server_dst.txt
