@@ -2,7 +2,7 @@ FROM cm2network/steamcmd:root
 
 LABEL maintainer="wallacepf@gmail.com"
 
-RUN sudo mkdir -p /src/server_dst && sudo mkdir /src/config
+RUN mkdir -p /src/server_dst && mkdir /src/config
 
 COPY . /src/config
 
