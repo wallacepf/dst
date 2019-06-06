@@ -9,19 +9,19 @@ lib32gcc1 \
 lib32stdc++6 \
 libcurl4-gnutls-dev:i386
 
-RUN mkdir -p /src/server_dst && mkdir /src/config
+RUN mkdir -p /src/server_dst && mkdir /src/config && mkdir /src/steamcmd
 
-COPY steamcmd_linux.tar.gz /src
+COPY steamcmd_linux.tar.gz /src/steamcmd
 
 COPY server_dst.txt /src/config
 
 RUN adduser dst && su - dst
 
-WORKDIR /src
+WORKDIR /src/steamcmd
 
 RUN tar -xvzf steamcmd_linux.tar.gz
 
-RUN ./steamcmd_linux/steamcmd.sh +runscript config/server_dst.txt
+RUN ./steamcmd.sh +runscript config/server_dst.txt
 
 # RUN apt-get update
 
