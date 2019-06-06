@@ -21,7 +21,7 @@ WORKDIR /src/steamcmd
 
 RUN tar -xvzf steamcmd_linux.tar.gz
 
-RUN ./steamcmd.sh +runscript config/server_dst.txt
+RUN ./steamcmd.sh +runscript ../config/server_dst.txt
 
 # RUN apt-get update
 
