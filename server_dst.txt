@@ -1,4 +1,4 @@
-@ShotdownOnFailedCommand 1
+@ShutdownOnFailedCommand 1
 @NoPromptForPassword 1
 login anonymous
 force_install_dir /src/server_dst
