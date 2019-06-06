@@ -1,6 +1,6 @@
 @ShotdownOnFailedCommand 1
 @NoPromptForPassword 1
 login anonymous
-force_install_dir ~/server_dst
+force_install_dir /src/server_dst
 app_update 343050
 quit

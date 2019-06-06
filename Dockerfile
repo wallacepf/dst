@@ -1,7 +1,11 @@
+LABEL maintainer="wallacepf@gmail.com"
+
 FROM cm2network/steamcmd
 
-RUN mkdir ~/server_dst && mkdir ~/config
+RUN mkdir /src/server_dst && mkdir /src/config
 
-COPY . ~/config
+COPY . /src/config
 
-RUN ./steamcmd.sh +runscript ~/config
+VOLUME [ "/src" ]
+
+RUN ./steamcmd.sh +runscript /src/config
