@@ -1,6 +1,6 @@
-LABEL maintainer="wallacepf@gmail.com"
-
 FROM cm2network/steamcmd
+
+LABEL maintainer="wallacepf@gmail.com"
 
 RUN mkdir /src/server_dst && mkdir /src/config
 
