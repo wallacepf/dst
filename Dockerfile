@@ -9,7 +9,7 @@ lib32gcc1 \
 lib32stdc++6 \
 libcurl4-gnutls-dev:i386
 
-RUN mkdir -p /src/server_dst && mkdir /src/config && mkdir /src/steamcmd
+RUN mkdir -p /src/server_dst/config && mkdir /src/config && mkdir /src/steamcmd
 
 COPY steamcmd_linux.tar.gz /src/steamcmd
 
