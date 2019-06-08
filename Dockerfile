@@ -18,4 +18,6 @@ COPY cluster_token.txt /src/server_dst/config/DoNotStarveTogether/TrancaDSTServe
 COPY Caves/* /src/server_dst/config/DoNotStarveTogether/TrancaDSTServer/Caves/
 COPY Master/* /src/server_dst/config/DoNotStarveTogether/TrancaDSTServer/Master/
 
+EXPOSE 10999/udp
+
 VOLUME [ "/src" ]
