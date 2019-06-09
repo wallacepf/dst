@@ -1,0 +1,1 @@
+Don't forget to update the cluster.ini and server.ini

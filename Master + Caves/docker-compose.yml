@@ -1,0 +1,16 @@
+version:"3.5"
+services
+  master
+  image:"wallacepf/dstmaster:v1"
+  networks:
+    dst-net
+  caves
+  image:"wallacepf/dstcaves:v1"
+  networks:
+    dst-net
+
+networks:
+  dst-net:
+  driver:overlay
+  attachable:true
+  
